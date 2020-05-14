@@ -14,7 +14,7 @@
         body {
             padding: 0;
             margin: 0;
-            background-color: rgba(63, 11, 252, 0.685);
+            background: linear-gradient( 95deg, #37e60b81, #eb6f35, rgba(255, 230, 7, 0.603));
         }
         
         nav {
@@ -110,13 +110,11 @@
         }
         
         .card {
-            position: absolute;
-            margin: auto;
-            top: 70px;
+            position: relative;
             left: 20px;
             height: 350px;
             width: 200px;
-            background-color: #4ab92869;
+            background: linear-gradient( 45deg, #cc2b5e, #753a88);
             border-radius: 10px;
             transition: .3s;
             text-align: center;
@@ -127,8 +125,8 @@
             transform: scale(.9);
         }
         
-        .c1:hover label {
-            color: #24f19cf1;
+        .card:hover label {
+            color: #ffffffc0;
         }
         
         .name {
@@ -140,7 +138,7 @@
         }
         
         label {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: bolder;
             font-family: monospace;
             text-transform: uppercase;
@@ -148,12 +146,23 @@
             transition: .3s;
         }
         
-        .c2 {
-            left: 240px;
+        .container {
+            margin: auto;
+            padding: 0;
+            background-color: transparent;
+            display: flex;
+            width: auto;
+            height: 400px;
+            overflow: scroll;
         }
         
-        .c2:hover label {
-            color: #24f19cf1;
+         ::-webkit-scrollbar {
+            width: 0px;
+        }
+        
+         ::-webkit-scrollbar-thumb {
+            background: linear-gradient( 45deg, #06dee1, #79ff6c);
+            border-radius: 5px;
         }
     </style>
 
@@ -178,19 +187,45 @@
             </form>
         </div>
     </nav>
-    <a href="https://yashkhare143.github.io/BatteryIndecator.github.io/" target="blank">
-        <div class="card c1">
-            <div class="img"><img src="" alt=""></div>
-            <div class="name"><label>Battery</label></div>
-        </div>
-    </a>
+    <div class="container">
+        <a href="https://yashkhare143.github.io/BatteryIndecator.github.io/" target="blank">
+            <div class="card c1">
+                <div class="img"><img src="" alt=""></div>
+                <div class="name"><label>Battery</label></div>
+            </div>
+        </a>
 
-    <a href=" https://yashkhare143.github.io/HappyBirthday.github.io/" target="blank">
-        <div class="card c2">
-            <div class="img"><img src="" alt=""></div>
-            <div class="name"><label>Happy Birthday</label></div>
-        </div>
-    </a>
+        <a href=" https://yashkhare143.github.io/HappyBirthday.github.io/" target="blank">
+            <div class="card c2">
+                <div class="img"><img src="" alt=""></div>
+                <div class="name"><label>Happy Birthday</label></div>
+            </div>
+        </a>
+        <a href=" https://yashkhare143.github.io/card.github.io/" target="blank">
+            <div class="card c2">
+                <div class="img"><img src="" alt=""></div>
+                <div class="name"><label>Card</label></div>
+            </div>
+        </a>
+        <a href=" https://yashkhare143.github.io/customslidebar.github.io/" target="blank">
+            <div class="card c2">
+                <div class="img"><img src="" alt=""></div>
+                <div class="name"><label>Custome Slide Bar</label></div>
+            </div>
+        </a>
+        <a href="https://yashkhare143.github.io/iconhovereffect.github.io/" target="blank">
+            <div class="card c2">
+                <div class="img"><img src="" alt=""></div>
+                <div class="name"><label>Icon Hover Effect</label></div>
+            </div>
+        </a>
+        <a href="https://yashkhare143.github.io/popoutmenu.github.io/" target="blank">
+            <div class="card c2">
+                <div class="img"><img src="" alt=""></div>
+                <div class="name"><label>Pop Out Menu</label></div>
+            </div>
+        </a>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
