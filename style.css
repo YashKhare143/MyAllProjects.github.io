@@ -1,0 +1,121 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(#010611c2, #eb13c7ee);
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    min-height: 100vh;
+}
+
+.swiper-container {
+    width: 100%;
+    top: 15%;
+    position: absolute;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 270px;
+    height: 400px;
+    background: #d11433b7;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.imgbox img {
+    height: 300px;
+    width: 270px;
+}
+
+nav {
+    width: 100vw;
+    background-color: #0a1e29;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+li {
+    position: relative;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+}
+
+a {
+    z-index: 1;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 5px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+li:before {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    right: 0;
+    z-index: 0;
+    transition: all 0.5s;
+    top: 33.33%;
+}
+
+li:after {
+    content: "";
+    position: absolute;
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    left: 0;
+    z-index: 0;
+    transition: all 0.5s;
+    bottom: 0;
+}
+
+a:before {
+    position: absolute;
+    content: "";
+    height: 33.33%;
+    width: 0;
+    background-color: #0D7CFF;
+    bottom: 66.66%;
+    left: 0;
+    transition: all 0.5s;
+}
+
+li:hover:before,
+li:hover:after,
+li:hover a:before {
+    width: 100%;
+}
+
+#search {
+    position: absolute;
+    margin: auto;
+    right: 7px;
+}
